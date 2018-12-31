@@ -12,7 +12,7 @@
     'version': '12.0.1.0',
     'sequence':1,
     'category': 'Generic Modules/Sales Management',
-    'summary': 'odoo app will prevent the delivery order from being created until the invoice is confirmed',
+    'summary': 'this module will prevent the delivery order from being created until the invoice is validated',
     'description': """ 
 
        

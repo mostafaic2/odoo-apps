@@ -38,6 +38,4 @@ class AccountInvoice(models.Model):
     	res = super(AccountInvoice, self).action_invoice_open()
     	if self.origin:
     		order_obj = self.env['sale.order'].search([('name', '=', self.origin)])
-    		print(order_obj)
-    		print("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo")
     		order_obj.write({'is_validated' : True })
