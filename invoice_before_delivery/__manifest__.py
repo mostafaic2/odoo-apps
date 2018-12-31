@@ -14,12 +14,19 @@
     'category': 'Generic Modules/Sales Management',
     'summary': 'this module will prevent the delivery order from being created until the invoice is validated',
     'description': """ 
-
+        Some times you want to avoid creating of delivery order till invoice created from confirmed sale order,
+        so that module will help you to achieve that, just follow this porcess
+        1-Create sale order
+        2- Select storable products and set qty and prices
+        3-Confirm order "No delivery order created"
+        4- Create invoice
+        5- Vlidate invoice "New Button will appear in related sale order"
+        6-Move to the sale order to create youur delivery order
        
     """,
     'author': 'Mostafa Abd El Fattah<mostafa.ic2@gmail.com>', 
-    'website': 'http://www.demo.com',
-    'images': ['images/main_screenshot.jpg'],
+    'website': 'https://www.linkedin.com/in/mabdelfattah1/',
+    'images': ['images/main_screenshot.png'],
     'depends': ['sale', 'purchase', 'stock', 'account'],
     'data': [
         'views/sale_view.xml',
