@@ -8,7 +8,7 @@
 #
 ##############################################################################
 {
-    'name': 'Invoice Before Delivery',
+    'name': 'Invoice Before Delivery "Community & Enterprise',
     'version': '12.0.1.0',
     'sequence':1,
     'category': 'Generic Modules/Sales Management',
@@ -35,6 +35,6 @@
     'installable':True,
     'application':True,
     'auto-install':False,
-    'price':25.0,
+    'price':24.99,
     'currency':'EUR', 
 }
