@@ -82,7 +82,7 @@ class StockBackorderConfirmation(models.TransientModel):
 
           assignation_msg = self.env['mail.thread']._replace_local_links(message1)
           mail_obj.message_notify(
-                    subject=_('Backorder Notification RARA'),
+                    subject=_('Backorder Notification'),
                     body=assignation_msg,
                     partner_ids=[(4, pid) for pid in [part]],
                     record_name=pick_id.name,
