@@ -11,7 +11,7 @@
     'name': 'Search By Partner Phone in other Modules "Community & Enterprise"',
     'version': '12.0.1.0',
     'sequence':1,
-    'category': 'Generic Modules/Tools',
+    'category': 'Generic Modules/Extra Tools',
     'summary': 'Search by Phone/Mobile Number on any Module related to Partner',
     'description': """ 
         Make it easy for you to search by customer phone or mobile number on any module related to  partner
