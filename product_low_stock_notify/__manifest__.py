@@ -8,7 +8,7 @@
 #
 ##############################################################################
 {
-    'name': 'Low Stock Notify "Community & Enterprise',
+    'name': 'Product Low Stock Notification "Community & Enterprise',
     'version': '12.0.1.0',
     'sequence':1,
     'category': 'Generic Modules/Inventory',
