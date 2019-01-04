@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>BackOrder Notification "Community & Enterprise"</title>
+  <title>Low Stock Notify "Community & Enterprise"</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
 			<section class="oe_container oe_dark">
 				<div class="oe_row oe_spaced">
 					<h1 style="padding-top: 0%;text-transform: uppercase;font-weight: 900;color: #3d3d3d !important;margin-bottom:18px;">
-				       <center>BackOrder Notification "Community & Enterprise"</center>
+				       <center>Low Stock Notify "Community & Enterprise"</center>
 				    </h1>
 				    <hr style="width: 30%;height: 10px;background: #0DAC9E;margin-top: 0px !important;"/>
 				    
@@ -38,12 +38,10 @@
 			<div class="oe_row oe_spaced">
 			    <h3 style="font-size: 30px;color:#333;font-family:LatoOpen Sans;" class="text-center">Overview</h3>
 			    <p class="oe_mt32 text-justify" style="font-size: 16px;text-align:center;font-family:Noto Sans CJK TC Thin;color:#333">
-			       	<b>As a Manager you need to keep track of all backOrders which created or orders proceed without backorder<br/>
+			       	<b>As a Manager you need to keep track of all products stock which reaches the minimum stock rule defined<br/>
         Steps:-<br/>
-        1- Set Access rights for any user you want to get the notification<br/>
-        2-Go to picking and recieve partially <br/>
-        3-Decide whether you want to create backorder or not<br/>
-        4-An email will be sent to the selected users notify them about that backorder with a ling to redirect them back to the sysrtem<br/>
+        1- Go to product and set the minimum quantity to get notified about<br/>
+        2- A cron job will start to send a report daily about all products with minimum stock rule<br/>
 
 			       	</b>
 			    </p>
