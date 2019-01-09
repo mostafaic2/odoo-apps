@@ -21,7 +21,9 @@
         3- you will got list of invoices with another journal from customer invoices.
 
         Note:- You Can Adjust related journal account - and leave tax empty in fiscal postion
-       
+        Updates #1
+        1- Move the fiscal position on sale order under customer
+        2- Make the account invoice affected by fiscal position in joural
     """,
     'author': 'Mostafa Abd El Fattah<mostafa.ic2@gmail.com>', 
     'website': 'https://www.linkedin.com/in/mabdelfattah1/',
@@ -31,6 +33,7 @@
         'security/ir.model.access.csv',
         'views/partner_view.xml',
         'views/account_invoice_view.xml',
+        'views/sale_view.xml',
     ],
     'test': [],
     'installable':True,

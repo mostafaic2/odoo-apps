@@ -37,3 +37,13 @@ class AccountInvoice(models.Model):
 				for pos in inv.fiscal_position_id:
 					if pos.journal_ids.journal_src_id == inv.journal_id:
 						inv.journal_id = pos.journal_ids.journal_dest_id
+
+	@api.model
+	def create(self, vals):
+		res = super(AccountInvoice, self).create(vals)
+		if vals.get('fiscal_position_id'):
+			pos = self.env['account.fiscal.position'].search([('id', '=', vals.get('fiscal_position_id'))])
+			if pos.journal_ids.journal_src_id == res.journal_id:
+				res.journal_id = pos.journal_ids.journal_dest_id
+		return res
+

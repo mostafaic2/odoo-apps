@@ -17,16 +17,15 @@ class StockBackorderConfirmation(models.TransientModel):
 	backorder_reason_id = fields.Many2one('backorder.reason', string="Reason", required="1")
 	
 	def process(self):
-		res = self._process()
 		for pick_id in self.pick_ids:
 			reason_val = self.backorder_reason_id
 			# backorder_pick = self.env['stock.picking'].search([('backorder_id', '=', pick_id.id)])
 			pick_id.write({'backorder_reason_id':reason_val.id,
 								  'action': 'backorder'})
-
+		self._process()
 	def process_cancel_backorder(self):
-		res = self._process(cancel_backorder=True)
 		reason_val = self.backorder_reason_id
 		for pick_id in self.pick_ids:
 			pick_id.write({'backorder_reason_id':reason_val.id,
 							'action': 'nobackorder'})
+		self._process(cancel_backorder=True)
